@@ -1,33 +1,52 @@
-# Template Project
+# Predicting monthly sales of champagne by Makridakis and Wheelwright, 1989 using Time Series Forecasting
+Welcome to the Time-Series Project!
+In this project, you will demonstrate what you have learned in this course by Predicting the monthly sales of champagne
 
-We learnt about the XYZ dataset in the in-class session. We learnt
-* What is linear regression
-* How gradient descent algorithm works to minimize the cost function
-* What are the assumptions of linear regression
+We have seen in the in-class session how Time Series Forecasting Problem needs to be approached. We learnt about:
 
-We also implemented linear regression using `sklearn` library in which we
+* Time Series Analysis and Time Series Forecasting
+* Different Kinds of Forecasting
+* Visualizing Time-Series Data
+* Decomposing Time-Series Data into Trend, Seasonality and residuals
+* Time-Series validation and Cross-Validation Strategies
+* Measuring Forecasting Errors
+* Simple Moving Averages
+* Exponential Moving Averages
+* Holt's Linear method
+* Holt's Winter Method
+* AR, MA , ARMA, ARIMA and SARIMA models
 
-* Fit a linear regression model
-* Predicted house prices using the fitted model
-* Calculated MSE for predicted and actual house prices
 
-Now, let's take this forward and increase our understanding of linear regression!
+### Load the required libraries
 
-This assignment is a series of simple tasks, in which we will be fitting a linear regression model on the house pricing data and validating some of the assumptions of linear regression.
+You can use pandas, datetime, math, sklearn, matplotlib, seaborn and statsmodels for this exercise
+
+
+## Dataset
+
+For this exercise, we will use the sales data of Makridakis and Wheelwright company.
+- The dataset provides the number of monthly sales of champagne from January 1964 to September 1972, or just under 10 years of data.
+- The values are a count of millions of sales and there are 105 observations.
+- The dataset is credited to Makridakis and Wheelwright, 1989.
+
+
 
 ## Why solve this assignment?
 
-By the end of this assignment,
+Solving this assignment would help you :-
 
-* You will be able to confidently train a linear regression model and predict values of the target variables
-* You will have a better understanding about the assumptions of linear regression and how to validate them.
-By completing this project you have an opportunity to win 800 points!!
+* Visualize Time-Series data effectively
+* Build models using Data-Driven approaches on Time-Series data
 
-## On assumptions of linear regression
+* For the assignment we will be using the following below packages:
+    * **pandas**
+    * **datetime**
+    * **math**
+    * **sklearn**
+    * **matplotlib**
+    * **seaborn**
+    * **statsmodels**
 
-Assumptions of linear regression model play an extremely important role in the model performance and stability. Hence, it is very important to validate these assumptions. Validating these assumptions can give us deeper insights into the **kind of data** we are dealing with and **steps that could be taken to improve the results** of the linear model.
+By completing this project you have an opportunity to win 250 points!
 
-So, let's get started.
-
-## About House Prices dataset
-* Info about the dataset
+Let's get started!
