@@ -1,6 +1,7 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q05_sarima_model.build import q05_sarima_model
+from time_series_101_project.q05_sarima_model.build import q05_sarima_model as student
+from greyatomlib.time_series_101_project.q05_sarima_model.build import q05_sarima_model as original
 import dill
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
@@ -9,10 +10,10 @@ from pandas.util.testing import assert_frame_equal
 class Testing(unittest.TestCase):
     def setUp(self):
         with open('q05_sarima_model/tests/user_sol.pkl', 'wb') as f:
-            dill.dump(q05_sarima_model, f)
+            dill.dump(student, f)
 
         with open('q05_sarima_model/tests/test_sol.pkl', 'wb') as f:
-            dill.dump(q05_sarima_model, f)
+            dill.dump(original, f)
         with open('q05_sarima_model/tests/user_sol.pkl', 'rb') as f:
             self.student_func = dill.load(f)
         with open('q05_sarima_model/tests/test_sol.pkl', 'rb') as f:
