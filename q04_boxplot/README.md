@@ -20,8 +20,7 @@ Do you know the famous Quote which Every Data Scientist have in their mind ? **G
 | path | str | compulsory |  | file path of csv file |
 | x | str | compulsory | "month" | x-column name |
 | y | str | compulsory | "Sales" | y-column name |
-| order_of_the_axis | str | compulsory | ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
-       'Sep', 'Oct', 'Nov', 'Dec'] | order of plotting |
+| order_of_the_axis | str | compulsory | ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec'] | order of plotting |
 
 
 
