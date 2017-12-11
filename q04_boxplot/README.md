@@ -7,27 +7,30 @@ Do you know the famous Quote which Every Data Scientist have in their mind ? **G
 
 
 ## Let's write a function `box_plot()` that
-* Takes as input the x_column_name, y_column_name, order_of_the_axis, data as input
+* Takes as input the path, x_column_name, y_column_name, order_of_the_axis, size as input
 * Outputs a box_plot visualization map.
 
 
-**Note :**
+**Note :** Training and validation sets have been preloaded for you.
 
 
 ### Parameters:
-x_column_name: string
-y_column_name: String
-data: pandas dataframe
-order_of_the_axis: A list, The order in which you want the x-axis to be plotted
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| path | str | compulsory |  | file path of csv file |
+| x | str | compulsory | "month" | x-column name |
+| y | str | compulsory | "Sales" | y-column name |
+| order_of_the_axis | str | compulsory | ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
+       'Sep', 'Oct', 'Nov', 'Dec'] | order of plotting |
 
 
-All the required data has already been loaded.
+
+
 
 In this problem use x_column_name as **"month"**, y_column_name as **Sales** , data as **X_train** and **order_of_the_axis** as list with **Jan to Dec**  
 
 
 Hint:
-- month and year columns were already created in the file.
 - Use seaborn factorplot with kind="box"
 
 ### Returns:
