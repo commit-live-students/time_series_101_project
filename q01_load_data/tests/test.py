@@ -1,6 +1,7 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q01_load_data.build import q01_load_data
+from time_series_101_project.q01_load_data.build import q01_load_data as student
+from greyatomlib.time_series_101_project.q01_load_data.build import q01_load_data as original
 import dill
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
@@ -9,10 +10,10 @@ from pandas.util.testing import assert_frame_equal
 class Testing(unittest.TestCase):
     def setUp(self):
         with open('user_sol.pkl', 'wb') as f:
-            dill.dump(q01_load_data, f)
+            dill.dump(student, f)
 
         with open('test_sol.pkl', 'wb') as f:
-            dill.dump(q01_load_data, f)
+            dill.dump(original, f)
         with open('user_sol.pkl', 'rb') as f:
             self.student_func = dill.load(f)
         with open('test_sol.pkl', 'rb') as f:
