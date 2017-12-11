@@ -1,22 +1,27 @@
 # Your very first prediction - Using fitted Sarima model
 
+# Note:
+The `tss` and `tss_valid` dataframes have been pre-loaded for you.
+
 ## Let's write a function `sarima_predictor()` that
-* Takes in a fitted linear model and makes a prediction.
-* It also calculates Root Mean square error
+* Takes in a fitted SARIMAX linear model and makes a prediction.
+* It also calculates Root Mean square error.
+* Fit on the tss and predict on the tss_valid
+* Returns the prediction(a dataframe with index same as that of `tss_valid`) and measure(RMSE).
+
 
 ### Parameters:
 
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
-| model | sarima model | compulsory | | Fitted sarima model |
-| X | DataFrame | compulsory | | Dataframe containing time variable as index and one column with time-series values to measure rmse|
+| path | str | compulsory | | file path of the csv file |
 
 
-Note: Every element in X should have a predicted value 
+ 
 
 ### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- |
-| y_pred | numpy.ndarray | Predicted values |
-| rmse | float | Root Mean square error |
+| pred | pandas Dataframe | Predicted values |
+| measure | float | Root Mean square error |
