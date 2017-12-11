@@ -1,6 +1,7 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q04_boxplot.build import q04_boxplot
+from time_series_101_project.q04_boxplot.build import q04_boxplot as student
+from greyatomlib.time_series_101_project.q04_boxplot.build import q04_boxplot as original
 import dill
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
@@ -9,10 +10,10 @@ from pandas.util.testing import assert_frame_equal
 class Testing(unittest.TestCase):
     def setUp(self):
         with open('q04_boxplot/tests/user_sol.pkl', 'wb') as f:
-            dill.dump(q04_boxplot, f)
+            dill.dump(student, f)
 
         with open('q04_boxplot/tests/test_sol.pkl', 'wb') as f:
-            dill.dump(q04_boxplot, f)
+            dill.dump(original, f)
         with open('q04_boxplot/tests/user_sol.pkl', 'rb') as f:
             self.student_func = dill.load(f)
         with open('q04_boxplot/tests/test_sol.pkl', 'rb') as f:
