@@ -30,3 +30,8 @@ In this problem use x_column_name as **"month"**, y_column_name as **Sales** , h
 ### Returns:
 
 This function plots a stacked point plot using seaborn pointplot. This function returns nothing.
+
+* Note - 
+Return Image should  look like this 
+
+https://github.com/commit-live-students/time_series_101_project/blob/master/images/q03_stacked_point_plot.png
