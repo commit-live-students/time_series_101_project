@@ -35,3 +35,8 @@ Hint:
 ### Returns:
 
 This function plots a box_plot using seaborn factorplot. This function returns nothing.
+
+* Note -
+Return Image should look like this
+
+https://github.com/commit-live-students/time_series_101_project/blob/master/images/q03_stacked_point_plot.png
