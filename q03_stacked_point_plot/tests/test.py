@@ -1,6 +1,7 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q03_stacked_point_plot.build import q03_stacked_point_plot
+from time_series_101_project.q03_stacked_point_plot.build import q03_stacked_point_plot as student
+from greyatomlib.time_series_101_project.q03_stacked_point_plot.build import q03_stacked_point_plot as original
 import dill
 import pandas as pd
 from pandas.util.testing import assert_frame_equal
@@ -9,10 +10,10 @@ from pandas.util.testing import assert_frame_equal
 class Testing(unittest.TestCase):
     def setUp(self):
         with open('q03_stacked_point_plot/tests/user_sol.pkl', 'wb') as f:
-            dill.dump(q03_stacked_point_plot, f)
+            dill.dump(student, f)
 
         with open('q03_stacked_point_plot/tests/test_sol.pkl', 'wb') as f:
-            dill.dump(q03_stacked_point_plot, f)
+            dill.dump(original, f)
         with open('q03_stacked_point_plot/tests/user_sol.pkl', 'rb') as f:
             self.student_func = dill.load(f)
         with open('q03_stacked_point_plot/tests/test_sol.pkl', 'rb') as f:
