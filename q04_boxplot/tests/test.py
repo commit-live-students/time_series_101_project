@@ -1,6 +1,6 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q04_boxplot.build import q04_boxplot as student
+from ..build import q04_boxplot as student
 from greyatomlib.time_series_101_project.q04_boxplot.build import q04_boxplot as original
 import dill
 import pandas as pd

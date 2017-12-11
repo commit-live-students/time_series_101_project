@@ -1,6 +1,6 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q03_stacked_point_plot.build import q03_stacked_point_plot as student
+from ..build import q03_stacked_point_plot as student
 from greyatomlib.time_series_101_project.q03_stacked_point_plot.build import q03_stacked_point_plot as original
 import dill
 import pandas as pd

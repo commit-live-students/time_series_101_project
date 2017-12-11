@@ -1,6 +1,6 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q06_sarima_predictor.build import q06_sarima_predictor as student
+from ..build import q06_sarima_predictor as student
 from greyatomlib.time_series_101_project.q06_sarima_predictor.build import q06_sarima_predictor as original 
 import dill
 import pandas as pd

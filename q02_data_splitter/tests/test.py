@@ -1,6 +1,6 @@
 import unittest
 from inspect import getargspec
-from time_series_101_project.q02_data_splitter.build import q02_data_splitter as student
+from ..build import q02_data_splitter as student
 from greyatomlib.time_series_101_project.q02_data_splitter.build import q02_data_splitter as original
 import dill
 import pandas as pd
