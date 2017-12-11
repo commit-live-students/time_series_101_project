@@ -3,25 +3,29 @@
 Visualizing is the key to extract insights from the data. We will use seaborn pointplot to visualize the data (We have discussed this in class).
 
 ## Let's write a function `Stacked_point_plot()` that
-* Takes as input the x_column_name, y_column_name, hue, order_of_the_axis, data as input
+* Takes as input the path, x_column_name, y_column_name, hue, order_of_the_axis as input
 
 
 **Note :**
+* Create two new columns `year` and `month` from the `Month` column by extracting the year and months. 
+* This assignment is needed to be carried out on the training dataframe only.
 
 
 ### Parameters:
-x_column_name: string
-y_column_name: String
-hue: string
-data: pandas dataframe
-order_of_the_axis: A list, The order in which you want the x-axis to be plotted
+
+| Parameter | dtype | argument type | default value | description |
+| --- | --- | --- | --- | --- |
+| path | str | compulsory |  | file path of csv file |
+| x_column_name | str | compulsory | "month" | month column |
+| y_column_name | str | compulsory | "Sales" | Sales column |
+| hue | str | compulsory | "year" | display colored plots by hue |
+| order_of_the_axis | list | compulsory | ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec'] | order of plotting |
 
 All the required data has already been loaded.
 
 In this problem use x_column_name as **"month"**, y_column_name as **Sales** , hue as **"year"**, data as **X_train** and **order_of_the_axis** as list with **Jan to Dec**  
 
 
-Hint: month and year columns were already created in the file.
 
 ### Returns:
 
