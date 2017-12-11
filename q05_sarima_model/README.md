@@ -4,22 +4,23 @@ In the class we have seen that SARIMA model is out-performing all the other Data
 
 It is a robust model when there is a clear seasonality in your data.
 
-So lets write a fuction to build a sarimax model. 
+Train and validation models have been pre-loaded for you.
+
+So lets write a fuction to build a sarimax model properly in the next function. 
 
 ## Let's write a function `sarima()` that
-* Takes as input as train_data (index has time variable and has one column with Time-Series values)
-* Fit a SARIMAX model from statsmodels.tsa.statespace module
+* Takes input as path of the csv file.
+* Creates new dataframes for both training and validation sets with a single column whose values are the values of the `Sales`   column and the index values are the `Month` values.
 
-### Parameters:
+## Parameters:
 
 | Parameter | dtype | argument type | default value | description |
 | --- | --- | --- | --- | --- |
-| X | DataFrame | compulsory | | Dataframe containing time variable as index and one column with time-series values |
-| order | tuple | compulsory | | A tuple contain the (p, d, q) values of Non-seasonal part of the model |
-| seasonal_order | tuple | compulsory | | A tuple containing the (p, d, q) values of seasonal part of the model |
+| path | str | compulsory | | file path of the csv file |
 
 ### Returns:
 
 | Return | dtype | description |
 | --- | --- | --- |
-| lm | statsmodels.tsa.statespace.sarimax.SARIMAX | Fitted a SARIMAX Model |
+| tss | pandas Dataframe | training dataframe |
+| tss_valid | pandas Dataframe | training dataframe |
