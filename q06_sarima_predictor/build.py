@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 import seaborn as sns
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 from statsmodels.tsa.statespace import sarimax
 import math
 from sklearn.metrics import mean_squared_error
