@@ -1,6 +1,7 @@
 
 import pandas as pd
 import numpy as np
+plt.switch_backend('agg')
 #import sys
 #sys.path.append('./')
 from sklearn.model_selection import train_test_split
