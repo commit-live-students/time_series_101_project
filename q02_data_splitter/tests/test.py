@@ -1,5 +1,5 @@
 import unittest
-from inspect import getargspec
+from inspect import getfullargspec
 from ..build import q02_data_splitter as student
 from greyatomlib.time_series_101_project.q02_data_splitter.build import q02_data_splitter as original
 import dill
@@ -24,8 +24,8 @@ class Testing(unittest.TestCase):
 
     #  Check the arguements of the function
     def test_args(self):
-        self.args_student = getargspec(self.student_func).args
-        self.args_original = getargspec(self.solution_func).args
+        self.args_student = getfullargspec(self.student_func).args
+        self.args_original = getfullargspec(self.solution_func).args
         self.assertEqual(len(self.args_student), len(self.args_original),
                          "Expected argument(s) %d, Given %d" % (len(self.args_original), len(self.args_student)))
 
