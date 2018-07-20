@@ -8,7 +8,7 @@ Tip: In practice, before predicting for future, We need to backtest our model pe
 Why do we need to test our model performance on validation data and not on train data ?
 Tip: Learn what does Over-fitting means
 
-## Write a function `data_splitter()` which splits the data into train and validation using the following parameters
+## Write a function `q02_data_splitter` which splits the data into train and validation using the following parameters
 -  Data has been preloaded for you using the previous function.
 - Convert the `'Month'` column to a *datetime* object using the **.to_datetime()** method.
 - Train: < 1971-10-01
