@@ -3,7 +3,7 @@
 # Note:
 The `tss` and `tss_valid` dataframes have been pre-loaded for you.
 
-## Let's write a function `sarima_predictor()` that
+## Let's write a function `q06_sarima_predictor` that
 * Takes in a fitted SARIMAX linear model and makes a prediction.
 * It also calculates Root Mean square error.
 * Fit on the tss and predict on the tss_valid
