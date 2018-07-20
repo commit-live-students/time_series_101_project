@@ -8,7 +8,7 @@ Train and validation models have been pre-loaded for you.
 
 So lets write a fuction to build a sarimax model properly in the next function. 
 
-## Let's write a function `sarima()` that
+## Let's write a function `q05_sarima_model` that
 * Takes input as path of the csv file.
 * Creates new dataframes for both training and validation sets with a single column whose values are the values of the `Sales`   column and the index values are the `Month` values.
 
