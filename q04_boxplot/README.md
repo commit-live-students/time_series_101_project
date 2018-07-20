@@ -6,7 +6,7 @@ Do you know that Data Scientist Usually spend 80% of their time collecting data 
 Do you know the famous Quote which Every Data Scientist have in their mind ? **GARBAGE IN.. GARBAGE Out**
 
 
-## Let's write a function `box_plot()` that
+## Let's write a function `q04_boxplot` that
 * Takes as input the path, x_column_name, y_column_name, order_of_the_axis, size as input
 * Outputs a box_plot visualization map.
 
