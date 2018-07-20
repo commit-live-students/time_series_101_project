@@ -2,7 +2,7 @@
 
 Visualizing is the key to extract insights from the data. We will use seaborn pointplot to visualize the data (We have discussed this in class).
 
-## Let's write a function `Stacked_point_plot()` that
+## Let's write a function `q03_stacked_point_plot` that
 * Takes as input the path, x_column_name, y_column_name, hue, order_of_the_axis.
 
 
