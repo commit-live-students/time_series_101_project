@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 from greyatomlib.time_series_101_project.q02_data_splitter.build import q02_data_splitter
 
 
-def q05_sarima_model(path):
-    train, validation = q02_data_splitter(path)
-    "write your solution here"
+"write your solution here"
     
 
