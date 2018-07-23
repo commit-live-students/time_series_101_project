@@ -10,8 +10,7 @@ from sklearn.metrics import mean_squared_error
 #import sys
 #sys.path.append('./')
 from greyatomlib.time_series_101_project.q05_sarima_model.build import q05_sarima_model
+tss, tss_valid = q05_sarima_model(path)
 
-def q06_sarima_predictor(path):
-    tss, tss_valid = q05_sarima_model(path)
     "write your solution here"
     
