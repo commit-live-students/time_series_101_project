@@ -8,8 +8,5 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 import seaborn as sns
 
-def q03_stacked_point_plot(path, x_column_name="month", y_column_name="Sales", hue="year",
-        order_of_the_axis=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec']):
-    train, validation = q02_data_splitter(path)
-    #"write your solution here"
+#"write your solution here"
     
