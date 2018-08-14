@@ -8,15 +8,19 @@ import matplotlib.pyplot as plt
 # sys.path.append('./')
 from greyatomlib.time_series_101_project.q02_data_splitter.build import q02_data_splitter
 path = 'data/perrin-freres-monthly-champagne.csv'
+plt.switch_backend('agg')
 train, validation = q02_data_splitter(path)
 
 
 'write your solution here'
 def q05_sarima_model(path):
-    train.index = train['Month']
-    train.drop(labels=['Month'],axis=1,inplace=True)
-    validation.index = validation['Month']
-    validation.drop(labels=['Month'],axis=1,inplace=True)
+    train, validation = q02_data_splitter(path)
+    train.index=train['Month']
+    train=train[['Sales']]
+    train.index.name=None
+    validation.index=validation['Month']
+    validation=validation[['Sales']]
+    validation.index.name=None
     return train,validation
 
 
