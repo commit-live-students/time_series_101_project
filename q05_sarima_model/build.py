@@ -14,15 +14,20 @@ path = 'data/perrin-freres-monthly-champagne.csv'
 
 'write your solution here'
 def q05_sarima_model(data):
-    
+
     train, validation = q02_data_splitter(data)
     train = pd.DataFrame(train)
     validation = pd.DataFrame(validation)
-    train.index, validation.index = train['Month'], validation['Month']
-    train = train.drop('Month', 1)
-    validation = validation.drop('Month', 1)
-    return (train, validation)
+
+    # Train dataframe
+    tss = pd.DataFrame(train['Sales'])
+    tss.column = ['Sales']
+    tss.index = train['Month'].values
+
+    tss_valid = pd.DataFrame(validation['Sales'])
+    tss_valid.column = ['Sales']
+    tss_valid.index = validation['Month'].values
+    return tss, tss_valid
+    #return train['Sales'], validation
 
 q05_sarima_model(path)
-
-
