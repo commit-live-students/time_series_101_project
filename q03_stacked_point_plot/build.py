@@ -1,5 +1,7 @@
+# %load q03_stacked_point_plot/build.py
 import pandas as pd
 import numpy as np
+import datetime
 #import sys
 #sys.path.append('./')
 from sklearn.model_selection import train_test_split
@@ -8,5 +10,18 @@ import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 import seaborn as sns
 
-#"write your solution here"
-    
+path = 'data/perrin-freres-monthly-champagne.csv'
+
+#'write your solution here'
+def q03_stacked_point_plot(path, x_column_name='month', y_column_name='Sales', hue='year',
+        order_of_the_axis=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec']):
+    train, validation = q02_data_splitter(path)
+    #'write your solution here'
+    ts = pd.DataFrame(train)
+    ts['year'] = ts['Month'].dt.year
+    ts['month'] = ts['Month'].dt.strftime('%b')
+    return sns.pointplot(x=x_column_name, y=y_column_name, hue=hue, data=ts, x_order=order_of_the_axis)
+
+
+
+
