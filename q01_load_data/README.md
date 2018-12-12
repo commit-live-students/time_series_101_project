@@ -6,6 +6,8 @@ We will start with loading the data into a variable, which we will use for furth
 
 * Loads a dataset using panda's read_csv api with the following specifications:
 
+path = 'data/perrin-freres-monthly-champagne.csv
+
 **Notice that you need to drop the index column.**
 
 ### Parameters:
